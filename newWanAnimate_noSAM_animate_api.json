@@ -23,7 +23,7 @@
       "cfg": 1,
       "shift": 9,
       "seed": 899622628429567,
-      "force_offload": true,
+      "force_offload": false,
       "scheduler": "dpm++_sde",
       "riflex_freq_index": 0,
       "denoise_strength": 1,
@@ -214,7 +214,7 @@
       "pad_color": "0, 0, 0",
       "crop_position": "top",
       "divisible_by": 15,
-      "device": "cpu",
+      "device": "cuda",
       "image": [
         "57",
         0
@@ -246,7 +246,7 @@
       "strength_2": 1,
       "crop": "center",
       "combine_embeds": "average",
-      "force_offload": true,
+      "force_offload": false,
       "tiles": 0,
       "ratio": 0.5,
       "clip_vision": [
@@ -359,7 +359,7 @@
         "63",
         1
       ],
-      "force_offload": true,
+      "force_offload": false,
       "frame_window_size": 77,
       "adaptive_window_mode": "adaptive",
       "colormatch": "disabled",

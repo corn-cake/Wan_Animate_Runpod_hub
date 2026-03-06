@@ -1,0 +1,370 @@
+2026-03-06T15:12:54.725025769Z ==========
+2026-03-06T15:12:54.725032719Z == CUDA ==
+2026-03-06T15:12:54.725037757Z ==========
+2026-03-06T15:12:54.729215977Z CUDA Version 12.8.1
+2026-03-06T15:12:54.730729975Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2026-03-06T15:12:54.732535990Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2026-03-06T15:12:54.732540998Z By pulling and using the container, you accept the terms and conditions of this license:
+2026-03-06T15:12:54.732545615Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2026-03-06T15:12:54.732552645Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2026-03-06T15:12:54.749809128Z Starting ComfyUI in the background...
+2026-03-06T15:12:54.750639392Z Waiting for ComfyUI to be ready...
+2026-03-06T15:12:54.761512421Z Waiting for ComfyUI... (0/120)
+2026-03-06T15:12:56.351577702Z [START] Security scan
+2026-03-06T15:12:56.351617662Z [DONE] Security scan
+2026-03-06T15:12:56.351623901Z ## ComfyUI-Manager: installing dependencies done.
+2026-03-06T15:12:56.351630752Z ** ComfyUI startup time: 2026-03-06 15:12:56.351
+2026-03-06T15:12:56.351644382Z ** Platform: Linux
+2026-03-06T15:12:56.351725914Z ** Python version: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+2026-03-06T15:12:56.351807867Z ** Python executable: /usr/bin/python
+2026-03-06T15:12:56.351914356Z ** ComfyUI Path: /ComfyUI
+2026-03-06T15:12:56.352019133Z ** ComfyUI Base Folder Path: /ComfyUI
+2026-03-06T15:12:56.352187105Z ** User directory: /ComfyUI/user
+2026-03-06T15:12:56.352282798Z ** ComfyUI-Manager config path: /ComfyUI/user/__manager/config.ini
+2026-03-06T15:12:56.352394626Z ** Log path: /ComfyUI/user/comfyui.log
+2026-03-06T15:12:56.774554556Z Waiting for ComfyUI... (2/120)
+2026-03-06T15:12:57.049535462Z /usr/local/lib/python3.10/dist-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.5.0) or chardet (7.0.1)/charset_normalizer (3.4.4) doesn't match a supported version!
+2026-03-06T15:12:57.049610325Z   warnings.warn(
+2026-03-06T15:12:57.049623014Z Prestartup times for custom nodes:
+2026-03-06T15:12:57.049629784Z    1.8 seconds: /ComfyUI/custom_nodes/ComfyUI-Manager
+2026-03-06T15:12:58.788859593Z Waiting for ComfyUI... (4/120)
+2026-03-06T15:12:59.773400101Z WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
+2026-03-06T15:12:59.773434163Z Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+2026-03-06T15:12:59.773439811Z Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8']}
+2026-03-06T15:12:59.773533922Z Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+2026-03-06T15:12:59.780617324Z Checkpoint files will always be loaded safely.
+2026-03-06T15:12:59.977255143Z Total VRAM 45468 MB, total RAM 1547880 MB
+2026-03-06T15:12:59.977292829Z pytorch version: 2.8.0+cu128
+2026-03-06T15:13:00.519556199Z xformers version: 0.0.32.post2
+2026-03-06T15:13:00.519593465Z Set vram state to: NORMAL_VRAM
+2026-03-06T15:13:00.519772794Z Device: cuda:0 NVIDIA L40S : cudaMallocAsync
+2026-03-06T15:13:00.519790380Z Using async weight offloading with 2 streams
+2026-03-06T15:13:00.520004531Z Enabled pinned memory 1470486.0
+2026-03-06T15:13:00.785411695Z Using sage attention
+2026-03-06T15:13:00.802043421Z Waiting for ComfyUI... (6/120)
+2026-03-06T15:13:02.569927599Z aimdo: src/control.c:65:INFO:comfy-aimdo inited for GPU: NVIDIA L40S (VRAM: 45468 MB)
+2026-03-06T15:13:02.570662900Z DynamicVRAM support detected and enabled
+2026-03-06T15:13:02.570677533Z Python version: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+2026-03-06T15:13:02.570682981Z ComfyUI version: 0.16.3
+2026-03-06T15:13:02.574322093Z Invalid version format in requirements.txt: 1.0
+2026-03-06T15:13:02.574405668Z ComfyUI frontend version: 1.39.19
+2026-03-06T15:13:02.575002221Z [Prompt Server] web root: /usr/local/lib/python3.10/dist-packages/comfyui_frontend_package/static
+2026-03-06T15:13:02.816703731Z Waiting for ComfyUI... (8/120)
+2026-03-06T15:13:04.228176379Z ----------------------------------------------------------------------
+2026-03-06T15:13:04.228188777Z [ComfyUI-Manager] NOTICE: Legacy config.ini detected
+2026-03-06T15:13:04.228195597Z   - Old: /ComfyUI/user/default/ComfyUI-Manager/config.ini
+2026-03-06T15:13:04.228201045Z   - New: /ComfyUI/user/__manager/config.ini
+2026-03-06T15:13:04.228207235Z   - Migrating config.ini only (other files are NOT migrated).
+2026-03-06T15:13:04.228211972Z   - Security level below 'normal' will be raised.
+2026-03-06T15:13:04.228216929Z ----------------------------------------------------------------------
+2026-03-06T15:13:04.228503819Z   - Security level: 'normal' (no change needed)
+2026-03-06T15:13:04.230298318Z ----------------------------------------------------------------------
+2026-03-06T15:13:04.230305308Z [ComfyUI-Manager] NOTICE: Legacy settings migrated
+2026-03-06T15:13:04.230311187Z   - Old location: /ComfyUI/user/default/ComfyUI-Manager
+2026-03-06T15:13:04.230315854Z   - Backed up to: /ComfyUI/user/__manager/.legacy-manager-backup
+2026-03-06T15:13:04.230409424Z   - Please verify and remove the backup when no longer needed.
+2026-03-06T15:13:04.230454962Z ----------------------------------------------------------------------
+2026-03-06T15:13:04.230865027Z ### Loading: ComfyUI-Manager (V3.39.2)
+2026-03-06T15:13:04.231281601Z [ComfyUI-Manager] network_mode: private
+2026-03-06T15:13:04.231465346Z [ComfyUI-Manager] ComfyUI per-queue preview override detected (PR #11261). Manager's preview method feature is disabled. Use ComfyUI's --preview-method CLI option or 'Settings > Execution > Live preview method'.
+2026-03-06T15:13:04.299481773Z ### ComfyUI Version: v0.16.3-2-g3b93d5d5 | Released on '2026-03-06'
+2026-03-06T15:13:04.321429824Z ⚠️  Enhanced face crop nodes not available: No module named '/ComfyUI/custom_nodes/ComfyUI-AdaptiveWindowSize.enhanced_face_crop'
+2026-03-06T15:13:04.321467390Z    Available nodes:
+2026-03-06T15:13:04.321472518Z    - Adaptive WanVideo Animate Embeds (AdaptiveWanVideoAnimateEmbeds)
+2026-03-06T15:13:04.535005438Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+2026-03-06T15:13:04.557877213Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+2026-03-06T15:13:04.606427157Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+2026-03-06T15:13:04.695038648Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+2026-03-06T15:13:04.829170875Z Waiting for ComfyUI... (10/120)
+2026-03-06T15:13:05.253483450Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+2026-03-06T15:13:05.255956976Z [ComfyUI-Manager] The private comfyregistry is not yet supported in `network_mode=private`.
+2026-03-06T15:13:05.256342173Z [ComfyUI-Manager] All startup tasks have been completed.
+2026-03-06T15:13:05.279873125Z generated new fontManager
+2026-03-06T15:13:06.446256087Z Import times for custom nodes:
+2026-03-06T15:13:06.446344168Z    0.0 seconds: /ComfyUI/custom_nodes/websocket_image_save.py
+2026-03-06T15:13:06.446391119Z    0.0 seconds: /ComfyUI/custom_nodes/auto_wan2.2animate_freamtowindow_server
+2026-03-06T15:13:06.446398220Z    0.0 seconds: /ComfyUI/custom_nodes/IntelligentVRAMNode
+2026-03-06T15:13:06.446791899Z    0.0 seconds: /ComfyUI/custom_nodes/ComfyUI-AdaptiveWindowSize
+2026-03-06T15:13:06.446867222Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-segment-anything-2
+2026-03-06T15:13:06.446872600Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+2026-03-06T15:13:06.446876837Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-Manager
+2026-03-06T15:13:06.446881393Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-KJNodes
+2026-03-06T15:13:06.446885880Z    0.7 seconds: /ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper
+2026-03-06T15:13:06.446890036Z    1.1 seconds: /ComfyUI/custom_nodes/ComfyUI-WanAnimatePreprocess
+2026-03-06T15:13:06.452035365Z Context impl SQLiteImpl.
+2026-03-06T15:13:06.452080743Z Will assume non-transactional DDL.
+2026-03-06T15:13:06.456548676Z Context impl SQLiteImpl.
+2026-03-06T15:13:06.456576498Z Will assume non-transactional DDL.
+2026-03-06T15:13:06.459176623Z Running upgrade  -> 0001_assets, Initial assets schema
+2026-03-06T15:13:06.459215401Z Revision ID: 0001_assets
+2026-03-06T15:13:06.459223293Z Revises: None
+2026-03-06T15:13:06.459229162Z Create Date: 2025-12-10 00:00:00
+2026-03-06T15:13:06.488979832Z Database upgraded from None to 0001_assets
+2026-03-06T15:13:06.538279780Z Assets scan(roots=['models']) completed in 0.049s (created=21, skipped_existing=0, orphans_pruned=0, total_seen=21)
+2026-03-06T15:13:06.593550753Z Starting server
+2026-03-06T15:13:06.593877793Z To see the GUI go to: http://0.0.0.0:8188
+2026-03-06T15:13:06.593916741Z To see the GUI go to: http://[::]:8188
+2026-03-06T15:13:06.848249645Z ComfyUI is ready!
+2026-03-06T15:13:06.848320781Z Starting the handler...
+2026-03-06T15:13:07.051845057Z /usr/local/lib/python3.10/dist-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.5.0) or chardet (7.0.1)/charset_normalizer (3.4.4) doesn't match a supported version!
+2026-03-06T15:13:07.051910395Z   warnings.warn(
+2026-03-06T15:13:08.754114235Z --- Starting Serverless Worker |  Version 1.7.13 ---
+2026-03-06T15:13:08.937938287Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2026-03-06T15:13:08.937971566Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2026-03-06T15:13:08.938095652Z {"requestId": "8065e72b-8851-41c8-9551-2e378e31ec11-e1", "message": "Started.", "level": "INFO"}
+2026-03-06T15:13:08.938294420Z handler.py          :202  2026-03-06 15:13:08,937 Received job input: {'cfg': 1, 'fps': 16, 'height': 512, 'image_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/f09d4b57-5cca-4ab9-b307-f12c630a10b8/animations/6196ce44-e75d-44cf-8991-e70e2f29908f/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T151248Z&X-Amz-Expires=604800&X-Amz-Signature=9b5bc29fa4dc19a8ffdd77e95c65a1250496a93677105b07c94de554270392bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'mode': 'animate', 'negative_prompt': 'redesign, style change, camera movement, zoom, rotation, framing/scale change, background change, gradient, texture, blur, ghosting, trails, flicker, jitter, warping, melting, missing limbs, extra limbs, loop seam, last-frame snap-back, head/helmet pop', 'prompt': 'Match the pose sequence and timing frame-by-frame. Preserve Character identity exactly (same design, proportions, colors, line weight, shading, and props). Character stays perfectly centered with constant scale; camera locked to torso (no shake/drift/zoom/rotation). Background is a flat solid #686868 (RGB 104,104,104). Seamless loop: last frame must match the first frame exactly, with continuous head/helmet position and rotation (no end-frame pop)., A lone undead knight in tarnished dark iron armor, wielding a broadsword in the right hand', 'seed': 77960933, 'steps': 4, 'video_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standard-run_platformer_right_offset-17.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T151248Z&X-Amz-Expires=604800&X-Amz-Signature=a93c165bfac2accec2ec571ebc8bb6645e324c97e8b1e0a4809321ab47aff6c0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'width': 512}
+2026-03-06T15:13:08.938343253Z handler.py          :145  2026-03-06 15:13:08,938 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/f09d4b57-5cca-4ab9-b307-f12c630a10b8/animations/6196ce44-e75d-44cf-8991-e70e2f29908f/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T151248Z&X-Amz-Expires=604800&X-Amz-Signature=9b5bc29fa4dc19a8ffdd77e95c65a1250496a93677105b07c94de554270392bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-06T15:13:10.395757948Z handler.py          :166  2026-03-06 15:13:10,395 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/f09d4b57-5cca-4ab9-b307-f12c630a10b8/animations/6196ce44-e75d-44cf-8991-e70e2f29908f/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T151248Z&X-Amz-Expires=604800&X-Amz-Signature=9b5bc29fa4dc19a8ffdd77e95c65a1250496a93677105b07c94de554270392bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_a2f4fa8a-d21e-434d-8996-e861b0e76282/input_image.jpg
+2026-03-06T15:13:10.395833090Z handler.py          :145  2026-03-06 15:13:10,395 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standard-run_platformer_right_offset-17.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T151248Z&X-Amz-Expires=604800&X-Amz-Signature=a93c165bfac2accec2ec571ebc8bb6645e324c97e8b1e0a4809321ab47aff6c0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-06T15:13:11.740449838Z handler.py          :166  2026-03-06 15:13:11,740 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standard-run_platformer_right_offset-17.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T151248Z&X-Amz-Expires=604800&X-Amz-Signature=a93c165bfac2accec2ec571ebc8bb6645e324c97e8b1e0a4809321ab47aff6c0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_a2f4fa8a-d21e-434d-8996-e861b0e76282/input_video.mp4
+2026-03-06T15:13:11.740819222Z handler.py          :284  2026-03-06 15:13:11,740 Connecting to WebSocket: ws://127.0.0.1:8188/ws?clientId=d3ca40e8-ae7f-4449-951b-524a8dedbe09
+2026-03-06T15:13:11.740836488Z handler.py          :288  2026-03-06 15:13:11,740 Checking HTTP connection to: http://127.0.0.1:8188/
+2026-03-06T15:13:11.744061189Z handler.py          :296  2026-03-06 15:13:11,743 HTTP 연결 성공 (시도 1)
+2026-03-06T15:13:11.747021323Z handler.py          :311  2026-03-06 15:13:11,746 웹소켓 연결 성공 (시도 1)
+2026-03-06T15:13:11.747089325Z handler.py          :84   2026-03-06 15:13:11,746 Queueing prompt to: http://127.0.0.1:8188/prompt
+2026-03-06T15:13:11.748087180Z got prompt
+2026-03-06T15:13:19.161664230Z Loading T5 parameters:   0%|          | 0/242 [00:00<?, ?it/s]Loading T5 parameters:   0%|          | 1/242 [00:00<01:16,  3.15it/s]Loading T5 parameters:   7%|▋         | 18/242 [00:00<00:04, 53.50it/s]Loading T5 parameters:  14%|█▎        | 33/242 [00:00<00:02, 82.46it/s]Loading T5 parameters:  20%|██        | 49/242 [00:00<00:01, 105.54it/s]Loading T5 parameters:  28%|██▊       | 67/242 [00:00<00:01, 127.87it/s]Loading T5 parameters:  34%|███▍      | 83/242 [00:00<00:01, 131.20it/s]Loading T5 parameters:  41%|████      | 99/242 [00:00<00:01, 134.68it/s]Loading T5 parameters:  48%|████▊     | 116/242 [00:01<00:00, 144.61it/s]Loading T5 parameters:  55%|█████▍    | 132/242 [00:01<00:00, 142.60it/s]Loading T5 parameters:  61%|██████    | 148/242 [00:01<00:00, 143.34it/s]Loading T5 parameters:  67%|██████▋   | 163/242 [00:01<00:00, 141.31it/s]Loading T5 parameters:  74%|███████▎  | 178/242 [00:01<00:00, 141.96it/s]Loading T5 parameters:  80%|███████▉  | 193/242 [00:01<00:00, 143.07it/s]Loading T5 parameters:  86%|████████▌ | 208/242 [00:01<00:00, 144.61it/s]Loading T5 parameters:  92%|█████████▏| 223/242 [00:01<00:00, 141.66it/s]Loading T5 parameters:  98%|█████████▊| 238/242 [00:01<00:00, 141.90it/s]Loading T5 parameters: 100%|██████████| 242/242 [00:01<00:00, 124.22it/s]
+2026-03-06T15:13:19.934360058Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder:   4%|▍         | 1/24 [00:00<00:09,  2.36it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 53.30it/s]
+2026-03-06T15:13:19.958466152Z prompt token count: tensor([145], device='cuda:0')
+2026-03-06T15:13:19.986957506Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 918.93it/s]
+2026-03-06T15:13:20.012543958Z prompt token count: tensor([73], device='cuda:0')
+2026-03-06T15:13:24.083190409Z Detecting bboxes:   0%|          | 0/29 [00:00<?, ?it/s]Detecting bboxes:   3%|▎         | 1/29 [00:01<00:45,  1.62s/it]Detecting bboxes:  34%|███▍      | 10/29 [00:01<00:02,  7.85it/s]Detecting bboxes: 100%|██████████| 29/29 [00:01<00:00, 26.72it/s]Detecting bboxes: 100%|██████████| 29/29 [00:01<00:00, 15.91it/s]
+2026-03-06T15:13:24.604448921Z Extracting keypoints:   0%|          | 0/29 [00:00<?, ?it/s]Extracting keypoints:  21%|██        | 6/29 [00:00<00:00, 53.23it/s]Extracting keypoints:  45%|████▍     | 13/29 [00:00<00:00, 59.03it/s]Extracting keypoints:  66%|██████▌   | 19/29 [00:00<00:00, 58.40it/s]Extracting keypoints:  86%|████████▌ | 25/29 [00:00<00:00, 58.21it/s]Extracting keypoints: 100%|██████████| 29/29 [00:00<00:00, 57.83it/s]
+2026-03-06T15:13:24.797959835Z Drawing pose images:   0%|          | 0/29 [00:00<?, ?it/s]Drawing pose images: 100%|██████████| 29/29 [00:00<00:00, 446.14it/s]
+2026-03-06T15:13:25.244957806Z Requested to load CLIPVisionModelProjection
+2026-03-06T15:13:25.271122193Z Model CLIPVisionModelProjection prepared for dynamic VRAM loading. 1205MB Staged. 0 patches attached.
+2026-03-06T15:13:25.377492780Z Clip embeds shape: torch.Size([1, 257, 1280]), dtype: torch.float32
+2026-03-06T15:13:25.377560071Z Combined clip embeds shape: torch.Size([1, 257, 1280])
+2026-03-06T15:13:26.974084680Z WanVAE encoding frames:   0%|          | 0/8 [00:00<?, ?it/s]WanVAE encoding frames:  25%|██▌       | 2/8 [00:00<00:00, 14.29it/s]WanVAE encoding frames:  75%|███████▌  | 6/8 [00:00<00:00, 19.58it/s]WanVAE encoding frames: 100%|██████████| 8/8 [00:00<00:00, 15.58it/s]WanVAE encoding frames: 100%|██████████| 8/8 [00:00<00:00, 16.11it/s]
+2026-03-06T15:13:27.775015227Z WanVAE encoding frames:   0%|          | 0/9 [00:00<?, ?it/s]WanVAE encoding frames:  44%|████▍     | 4/9 [00:00<00:00, 36.94it/s]WanVAE encoding frames:  89%|████████▉ | 8/9 [00:00<00:00, 15.76it/s]WanVAE encoding frames: 100%|██████████| 9/9 [00:00<00:00, 16.27it/s]
+2026-03-06T15:13:28.435893377Z WanVideo Enhanced BlockSwap
+2026-03-06T15:13:28.436395600Z    Auto tuning: False
+2026-03-06T15:13:28.436481608Z    VRAM threshold: 50.0%
+2026-03-06T15:13:28.436498353Z    GPU optimization: True
+2026-03-06T15:13:28.436658543Z Intelligent VRAM manager initialized: threshold=50.0%, device=cuda (NVIDIA L40S)
+2026-03-06T15:13:28.437205092Z Enhanced BlockSwap configuration completed
+2026-03-06T15:13:28.437235898Z    Final config: blocks=0, streams=6, ratio=80%
+2026-03-06T15:13:28.496538852Z CUDA Compute Capability: 8.9
+2026-03-06T15:13:28.496614315Z Detected model in_channels: 36
+2026-03-06T15:13:28.496622287Z Model cross attention type: i2v, num_heads: 40, num_layers: 40
+2026-03-06T15:13:28.496633904Z Model variant detected: 14B
+2026-03-06T15:13:28.854644029Z Loading LoRA: FullDynamic_Ultimate_Fusion_Elite with strength: 0.7
+2026-03-06T15:13:28.908224690Z Loading LoRA: WAN22_MoCap_fullbodyCOPY_ED with strength: 0.6
+2026-03-06T15:13:28.940121646Z lora key not loaded: face_adapter.fuser_blocks.0.k_norm.weight
+2026-03-06T15:13:28.940183479Z lora key not loaded: face_adapter.fuser_blocks.0.linear1_kv.bias
+2026-03-06T15:13:28.940190389Z lora key not loaded: face_adapter.fuser_blocks.0.linear1_kv.weight
+2026-03-06T15:13:28.940197680Z lora key not loaded: face_adapter.fuser_blocks.0.linear1_q.bias
+2026-03-06T15:13:28.940208326Z lora key not loaded: face_adapter.fuser_blocks.0.linear1_q.weight
+2026-03-06T15:13:28.940263218Z lora key not loaded: face_adapter.fuser_blocks.0.linear2.bias
+2026-03-06T15:13:28.940270910Z lora key not loaded: face_adapter.fuser_blocks.0.linear2.weight
+2026-03-06T15:13:28.940282327Z lora key not loaded: face_adapter.fuser_blocks.0.q_norm.weight
+2026-03-06T15:13:28.940296628Z lora key not loaded: face_adapter.fuser_blocks.1.k_norm.weight
+2026-03-06T15:13:28.940318010Z lora key not loaded: face_adapter.fuser_blocks.1.linear1_kv.bias
+2026-03-06T15:13:28.940329137Z lora key not loaded: face_adapter.fuser_blocks.1.linear1_kv.weight
+2026-03-06T15:13:28.940371180Z lora key not loaded: face_adapter.fuser_blocks.1.linear1_q.bias
+2026-03-06T15:13:28.940383368Z lora key not loaded: face_adapter.fuser_blocks.1.linear1_q.weight
+2026-03-06T15:13:28.940400904Z lora key not loaded: face_adapter.fuser_blocks.1.linear2.bias
+2026-03-06T15:13:28.940414254Z lora key not loaded: face_adapter.fuser_blocks.1.linear2.weight
+2026-03-06T15:13:28.940465711Z lora key not loaded: face_adapter.fuser_blocks.1.q_norm.weight
+2026-03-06T15:13:28.940483208Z lora key not loaded: face_adapter.fuser_blocks.2.k_norm.weight
+2026-03-06T15:13:28.940515946Z lora key not loaded: face_adapter.fuser_blocks.2.linear1_kv.bias
+2026-03-06T15:13:28.940527374Z lora key not loaded: face_adapter.fuser_blocks.2.linear1_kv.weight
+2026-03-06T15:13:28.940575926Z lora key not loaded: face_adapter.fuser_blocks.2.linear1_q.bias
+2026-03-06T15:13:28.940587043Z lora key not loaded: face_adapter.fuser_blocks.2.linear1_q.weight
+2026-03-06T15:13:28.940606943Z lora key not loaded: face_adapter.fuser_blocks.2.linear2.bias
+2026-03-06T15:13:28.940648996Z lora key not loaded: face_adapter.fuser_blocks.2.linear2.weight
+2026-03-06T15:13:28.940706612Z lora key not loaded: face_adapter.fuser_blocks.2.q_norm.weight
+2026-03-06T15:13:28.940721505Z lora key not loaded: face_adapter.fuser_blocks.3.k_norm.weight
+2026-03-06T15:13:28.940753202Z lora key not loaded: face_adapter.fuser_blocks.3.linear1_kv.bias
+2026-03-06T15:13:28.940773452Z lora key not loaded: face_adapter.fuser_blocks.3.linear1_kv.weight
+2026-03-06T15:13:28.940819652Z lora key not loaded: face_adapter.fuser_blocks.3.linear1_q.bias
+2026-03-06T15:13:28.940832100Z lora key not loaded: face_adapter.fuser_blocks.3.linear1_q.weight
+2026-03-06T15:13:28.940871910Z lora key not loaded: face_adapter.fuser_blocks.3.linear2.bias
+2026-03-06T15:13:28.940881805Z lora key not loaded: face_adapter.fuser_blocks.3.linear2.weight
+2026-03-06T15:13:28.940934964Z lora key not loaded: face_adapter.fuser_blocks.3.q_norm.weight
+2026-03-06T15:13:28.940942556Z lora key not loaded: face_adapter.fuser_blocks.4.k_norm.weight
+2026-03-06T15:13:28.940987783Z lora key not loaded: face_adapter.fuser_blocks.4.linear1_kv.bias
+2026-03-06T15:13:28.940995565Z lora key not loaded: face_adapter.fuser_blocks.4.linear1_kv.weight
+2026-03-06T15:13:28.941032400Z lora key not loaded: face_adapter.fuser_blocks.4.linear1_q.bias
+2026-03-06T15:13:28.941069175Z lora key not loaded: face_adapter.fuser_blocks.4.linear1_q.weight
+2026-03-06T15:13:28.941092300Z lora key not loaded: face_adapter.fuser_blocks.4.linear2.bias
+2026-03-06T15:13:28.941103507Z lora key not loaded: face_adapter.fuser_blocks.4.linear2.weight
+2026-03-06T15:13:28.941166521Z lora key not loaded: face_adapter.fuser_blocks.4.q_norm.weight
+2026-03-06T15:13:28.941204037Z lora key not loaded: face_adapter.fuser_blocks.5.k_norm.weight
+2026-03-06T15:13:28.941211118Z lora key not loaded: face_adapter.fuser_blocks.5.linear1_kv.bias
+2026-03-06T15:13:28.941238990Z lora key not loaded: face_adapter.fuser_blocks.5.linear1_kv.weight
+2026-03-06T15:13:28.941255464Z lora key not loaded: face_adapter.fuser_blocks.5.linear1_q.bias
+2026-03-06T15:13:28.941289225Z lora key not loaded: face_adapter.fuser_blocks.5.linear1_q.weight
+2026-03-06T15:13:28.941294252Z lora key not loaded: face_adapter.fuser_blocks.5.linear2.bias
+2026-03-06T15:13:28.941350807Z lora key not loaded: face_adapter.fuser_blocks.5.linear2.weight
+2026-03-06T15:13:28.941358339Z lora key not loaded: face_adapter.fuser_blocks.5.q_norm.weight
+2026-03-06T15:13:28.941394082Z lora key not loaded: face_adapter.fuser_blocks.6.k_norm.weight
+2026-03-06T15:13:28.941416355Z lora key not loaded: face_adapter.fuser_blocks.6.linear1_kv.bias
+2026-03-06T15:13:28.941441313Z lora key not loaded: face_adapter.fuser_blocks.6.linear1_kv.weight
+2026-03-06T15:13:28.941477928Z lora key not loaded: face_adapter.fuser_blocks.6.linear1_q.bias
+2026-03-06T15:13:28.941501343Z lora key not loaded: face_adapter.fuser_blocks.6.linear1_q.weight
+2026-03-06T15:13:28.941539490Z lora key not loaded: face_adapter.fuser_blocks.6.linear2.bias
+2026-03-06T15:13:28.941546941Z lora key not loaded: face_adapter.fuser_blocks.6.linear2.weight
+2026-03-06T15:13:28.941594973Z lora key not loaded: face_adapter.fuser_blocks.6.q_norm.weight
+2026-03-06T15:13:28.941620812Z lora key not loaded: face_adapter.fuser_blocks.7.k_norm.weight
+2026-03-06T15:13:28.941637867Z lora key not loaded: face_adapter.fuser_blocks.7.linear1_kv.bias
+2026-03-06T15:13:28.941668593Z lora key not loaded: face_adapter.fuser_blocks.7.linear1_kv.weight
+2026-03-06T15:13:28.941693721Z lora key not loaded: face_adapter.fuser_blocks.7.linear1_q.bias
+2026-03-06T15:13:28.941714933Z lora key not loaded: face_adapter.fuser_blocks.7.linear1_q.weight
+2026-03-06T15:13:28.941745488Z lora key not loaded: face_adapter.fuser_blocks.7.linear2.bias
+2026-03-06T15:13:28.941768162Z lora key not loaded: face_adapter.fuser_blocks.7.linear2.weight
+2026-03-06T15:13:28.941812629Z lora key not loaded: face_adapter.fuser_blocks.7.q_norm.weight
+2026-03-06T15:13:28.941820601Z lora key not loaded: face_encoder.conv1_local.conv.bias
+2026-03-06T15:13:28.941846790Z lora key not loaded: face_encoder.conv1_local.conv.weight
+2026-03-06T15:13:28.941875774Z lora key not loaded: face_encoder.conv2.conv.bias
+2026-03-06T15:13:28.941913921Z lora key not loaded: face_encoder.conv2.conv.weight
+2026-03-06T15:13:28.941928162Z lora key not loaded: face_encoder.conv3.conv.bias
+2026-03-06T15:13:28.941959740Z lora key not loaded: face_encoder.conv3.conv.weight
+2026-03-06T15:13:28.941988943Z lora key not loaded: face_encoder.out_proj.bias
+2026-03-06T15:13:28.942024036Z lora key not loaded: face_encoder.out_proj.weight
+2026-03-06T15:13:28.942029584Z lora key not loaded: face_encoder.padding_tokens
+2026-03-06T15:13:28.942091136Z lora key not loaded: motion_encoder.dec.direction.weight
+2026-03-06T15:13:28.942096825Z lora key not loaded: motion_encoder.enc.fc.0.bias
+2026-03-06T15:13:28.942127311Z lora key not loaded: motion_encoder.enc.fc.0.weight
+2026-03-06T15:13:28.942147731Z lora key not loaded: motion_encoder.enc.fc.1.bias
+2026-03-06T15:13:28.942190074Z lora key not loaded: motion_encoder.enc.fc.1.weight
+2026-03-06T15:13:28.942221011Z lora key not loaded: motion_encoder.enc.fc.2.bias
+2026-03-06T15:13:28.942238317Z lora key not loaded: motion_encoder.enc.fc.2.weight
+2026-03-06T15:13:28.942272538Z lora key not loaded: motion_encoder.enc.fc.3.bias
+2026-03-06T15:13:28.942305507Z lora key not loaded: motion_encoder.enc.fc.3.weight
+2026-03-06T15:13:28.942330084Z lora key not loaded: motion_encoder.enc.fc.4.bias
+2026-03-06T15:13:28.942357285Z lora key not loaded: motion_encoder.enc.fc.4.weight
+2026-03-06T15:13:28.942387270Z lora key not loaded: motion_encoder.enc.net_app.convs.0.0.weight
+2026-03-06T15:13:28.942395002Z lora key not loaded: motion_encoder.enc.net_app.convs.0.1.bias
+2026-03-06T15:13:28.942434911Z lora key not loaded: motion_encoder.enc.net_app.convs.1.conv1.0.weight
+2026-03-06T15:13:28.942464506Z lora key not loaded: motion_encoder.enc.net_app.convs.1.conv1.1.bias
+2026-03-06T15:13:28.942491056Z lora key not loaded: motion_encoder.enc.net_app.convs.1.conv2.0.kernel
+2026-03-06T15:13:28.942498146Z lora key not loaded: motion_encoder.enc.net_app.convs.1.conv2.1.weight
+2026-03-06T15:13:28.942542302Z lora key not loaded: motion_encoder.enc.net_app.convs.1.conv2.2.bias
+2026-03-06T15:13:28.942559448Z lora key not loaded: motion_encoder.enc.net_app.convs.1.skip.0.kernel
+2026-03-06T15:13:28.942604005Z lora key not loaded: motion_encoder.enc.net_app.convs.1.skip.1.weight
+2026-03-06T15:13:28.942610234Z lora key not loaded: motion_encoder.enc.net_app.convs.2.conv1.0.weight
+2026-03-06T15:13:28.942647820Z lora key not loaded: motion_encoder.enc.net_app.convs.2.conv1.1.bias
+2026-03-06T15:13:28.942671125Z lora key not loaded: motion_encoder.enc.net_app.convs.2.conv2.0.kernel
+2026-03-06T15:13:28.942708461Z lora key not loaded: motion_encoder.enc.net_app.convs.2.conv2.1.weight
+2026-03-06T15:13:28.942714090Z lora key not loaded: motion_encoder.enc.net_app.convs.2.conv2.2.bias
+2026-03-06T15:13:28.942762813Z lora key not loaded: motion_encoder.enc.net_app.convs.2.skip.0.kernel
+2026-03-06T15:13:28.942779588Z lora key not loaded: motion_encoder.enc.net_app.convs.2.skip.1.weight
+2026-03-06T15:13:28.942815942Z lora key not loaded: motion_encoder.enc.net_app.convs.3.conv1.0.weight
+2026-03-06T15:13:28.942821531Z lora key not loaded: motion_encoder.enc.net_app.convs.3.conv1.1.bias
+2026-03-06T15:13:28.942882322Z lora key not loaded: motion_encoder.enc.net_app.convs.3.conv2.0.kernel
+2026-03-06T15:13:28.942888060Z lora key not loaded: motion_encoder.enc.net_app.convs.3.conv2.1.weight
+2026-03-06T15:13:28.942933438Z lora key not loaded: motion_encoder.enc.net_app.convs.3.conv2.2.bias
+2026-03-06T15:13:28.942939507Z lora key not loaded: motion_encoder.enc.net_app.convs.3.skip.0.kernel
+2026-03-06T15:13:28.942987579Z lora key not loaded: motion_encoder.enc.net_app.convs.3.skip.1.weight
+2026-03-06T15:13:28.942994009Z lora key not loaded: motion_encoder.enc.net_app.convs.4.conv1.0.weight
+2026-03-06T15:13:28.943034259Z lora key not loaded: motion_encoder.enc.net_app.convs.4.conv1.1.bias
+2026-03-06T15:13:28.943040298Z lora key not loaded: motion_encoder.enc.net_app.convs.4.conv2.0.kernel
+2026-03-06T15:13:28.943090153Z lora key not loaded: motion_encoder.enc.net_app.convs.4.conv2.1.weight
+2026-03-06T15:13:28.943105746Z lora key not loaded: motion_encoder.enc.net_app.convs.4.conv2.2.bias
+2026-03-06T15:13:28.943157304Z lora key not loaded: motion_encoder.enc.net_app.convs.4.skip.0.kernel
+2026-03-06T15:13:28.943171305Z lora key not loaded: motion_encoder.enc.net_app.convs.4.skip.1.weight
+2026-03-06T15:13:28.943208721Z lora key not loaded: motion_encoder.enc.net_app.convs.5.conv1.0.weight
+2026-03-06T15:13:28.943214339Z lora key not loaded: motion_encoder.enc.net_app.convs.5.conv1.1.bias
+2026-03-06T15:13:28.943259036Z lora key not loaded: motion_encoder.enc.net_app.convs.5.conv2.0.kernel
+2026-03-06T15:13:28.943296522Z lora key not loaded: motion_encoder.enc.net_app.convs.5.conv2.1.weight
+2026-03-06T15:13:28.943325826Z lora key not loaded: motion_encoder.enc.net_app.convs.5.conv2.2.bias
+2026-03-06T15:13:28.943354810Z lora key not loaded: motion_encoder.enc.net_app.convs.5.skip.0.kernel
+2026-03-06T15:13:28.943364434Z lora key not loaded: motion_encoder.enc.net_app.convs.5.skip.1.weight
+2026-03-06T15:13:28.943414379Z lora key not loaded: motion_encoder.enc.net_app.convs.6.conv1.0.weight
+2026-03-06T15:13:28.943439877Z lora key not loaded: motion_encoder.enc.net_app.convs.6.conv1.1.bias
+2026-03-06T15:13:28.943474689Z lora key not loaded: motion_encoder.enc.net_app.convs.6.conv2.0.kernel
+2026-03-06T15:13:28.943485105Z lora key not loaded: motion_encoder.enc.net_app.convs.6.conv2.1.weight
+2026-03-06T15:13:28.943661529Z lora key not loaded: motion_encoder.enc.net_app.convs.6.conv2.2.bias
+2026-03-06T15:13:28.943745425Z lora key not loaded: motion_encoder.enc.net_app.convs.6.skip.0.kernel
+2026-03-06T15:13:28.943752035Z lora key not loaded: motion_encoder.enc.net_app.convs.6.skip.1.weight
+2026-03-06T15:13:28.943761699Z lora key not loaded: motion_encoder.enc.net_app.convs.7.conv1.0.weight
+2026-03-06T15:13:28.943783211Z lora key not loaded: motion_encoder.enc.net_app.convs.7.conv1.1.bias
+2026-03-06T15:13:28.943790502Z lora key not loaded: motion_encoder.enc.net_app.convs.7.conv2.0.kernel
+2026-03-06T15:13:28.943796772Z lora key not loaded: motion_encoder.enc.net_app.convs.7.conv2.1.weight
+2026-03-06T15:13:28.943806426Z lora key not loaded: motion_encoder.enc.net_app.convs.7.conv2.2.bias
+2026-03-06T15:13:28.943817703Z lora key not loaded: motion_encoder.enc.net_app.convs.7.skip.0.kernel
+2026-03-06T15:13:28.943826406Z lora key not loaded: motion_encoder.enc.net_app.convs.7.skip.1.weight
+2026-03-06T15:13:28.943841379Z lora key not loaded: motion_encoder.enc.net_app.convs.8.weight
+2026-03-06T15:13:28.943849831Z lora key not loaded: pose_patch_embedding.bias
+2026-03-06T15:13:28.943862320Z lora key not loaded: pose_patch_embedding.weight
+2026-03-06T15:13:28.943891664Z lora key not loaded: time_embedding.0.bias
+2026-03-06T15:13:28.943900978Z lora key not loaded: time_embedding.0.weight
+2026-03-06T15:13:28.943917593Z lora key not loaded: time_embedding.2.bias
+2026-03-06T15:13:28.943934818Z lora key not loaded: time_embedding.2.weight
+2026-03-06T15:13:28.943969130Z lora key not loaded: time_projection.1.bias
+2026-03-06T15:13:28.943983662Z lora key not loaded: time_projection.1.weight
+2026-03-06T15:13:28.949156952Z Loading LoRA: Wan2.2-Fun-A14B-InP-Fusion-Elite with strength: 0.5
+2026-03-06T15:13:29.002616091Z Loading and assigning model weights to device...
+2026-03-06T15:13:32.668619495Z Loading transformer parameters to cuda:0:   0%|          | 0/1427 [00:00<?, ?it/s]Loading transformer parameters to cuda:0:   1%|          | 11/1427 [00:00<00:17, 80.71it/s]Loading transformer parameters to cuda:0:   3%|▎         | 45/1427 [00:00<00:06, 208.84it/s]Loading transformer parameters to cuda:0:   6%|▌         | 83/1427 [00:00<00:04, 272.10it/s]Loading transformer parameters to cuda:0:   9%|▉         | 130/1427 [00:00<00:03, 343.77it/s]Loading transformer parameters to cuda:0:  12%|█▏        | 168/1427 [00:00<00:03, 354.46it/s]Loading transformer parameters to cuda:0:  15%|█▍        | 211/1427 [00:00<00:03, 366.03it/s]Loading transformer parameters to cuda:0:  17%|█▋        | 249/1427 [00:00<00:03, 335.83it/s]Loading transformer parameters to cuda:0:  20%|██        | 290/1427 [00:00<00:03, 356.12it/s]Loading transformer parameters to cuda:0:  24%|██▍       | 340/1427 [00:00<00:02, 395.12it/s]Loading transformer parameters to cuda:0:  27%|██▋       | 381/1427 [00:01<00:02, 358.41it/s]Loading transformer parameters to cuda:0:  29%|██▉       | 419/1427 [00:01<00:02, 354.39it/s]Loading transformer parameters to cuda:0:  33%|███▎      | 478/1427 [00:01<00:02, 416.74it/s]Loading transformer parameters to cuda:0:  37%|███▋      | 522/1427 [00:01<00:02, 422.44it/s]Loading transformer parameters to cuda:0:  40%|███▉      | 566/1427 [00:01<00:02, 369.46it/s]Loading transformer parameters to cuda:0:  43%|████▎     | 612/1427 [00:01<00:02, 390.56it/s]Loading transformer parameters to cuda:0:  46%|████▌     | 653/1427 [00:01<00:02, 383.49it/s]Loading transformer parameters to cuda:0:  49%|████▊     | 693/1427 [00:01<00:01, 387.03it/s]Loading transformer parameters to cuda:0:  51%|█████▏    | 733/1427 [00:02<00:02, 345.03it/s]Loading transformer parameters to cuda:0:  55%|█████▍    | 782/1427 [00:02<00:01, 381.19it/s]Loading transformer parameters to cuda:0:  58%|█████▊    | 822/1427 [00:02<00:01, 382.26it/s]Loading transformer parameters to cuda:0:  61%|██████    | 870/1427 [00:02<00:01, 406.27it/s]Loading transformer parameters to cuda:0:  64%|██████▍   | 912/1427 [00:02<00:01, 361.58it/s]Loading transformer parameters to cuda:0:  67%|██████▋   | 955/1427 [00:02<00:01, 372.04it/s]Loading transformer parameters to cuda:0:  70%|███████   | 1004/1427 [00:02<00:01, 402.37it/s]Loading transformer parameters to cuda:0:  74%|███████▎  | 1049/1427 [00:02<00:00, 413.78it/s]Loading transformer parameters to cuda:0:  77%|███████▋  | 1092/1427 [00:02<00:00, 363.51it/s]Loading transformer parameters to cuda:0:  80%|███████▉  | 1140/1427 [00:03<00:00, 392.69it/s]Loading transformer parameters to cuda:0:  83%|████████▎ | 1185/1427 [00:03<00:00, 405.54it/s]Loading transformer parameters to cuda:0:  86%|████████▌ | 1227/1427 [00:03<00:00, 357.49it/s]Loading transformer parameters to cuda:0:  89%|████████▉ | 1276/1427 [00:03<00:00, 390.99it/s]Loading transformer parameters to cuda:0:  93%|█████████▎| 1321/1427 [00:03<00:00, 406.07it/s]Loading transformer parameters to cuda:0:  98%|█████████▊| 1402/1427 [00:03<00:00, 515.69it/s]Loading transformer parameters to cuda:0: 100%|██████████| 1427/1427 [00:03<00:00, 389.42it/s]
+2026-03-06T15:13:32.673861969Z -------------------------
+2026-03-06T15:13:32.673910251Z Transformer weights loaded:
+2026-03-06T15:13:32.673921658Z Device: cuda:0   | Memory: 13,280,381.83 MB
+2026-03-06T15:13:32.674159063Z Using 406 LoRA weight patches for WanVideo model
+2026-03-06T15:13:34.666636801Z ------- Scheduler info -------
+2026-03-06T15:13:34.667084752Z Total timesteps: tensor([999, 964, 899, 749], device='cuda:0')
+2026-03-06T15:13:34.667438422Z Using timesteps: tensor([999, 964, 899, 749], device='cuda:0')
+2026-03-06T15:13:34.667974906Z Using sigmas: tensor([1.0000, 0.9643, 0.9000, 0.7500, 0.0000])
+2026-03-06T15:13:34.668025952Z ------------------------------
+2026-03-06T15:13:35.023967308Z Rope function: comfy
+2026-03-06T15:13:35.024420537Z ---------- Sampling start ----------
+2026-03-06T15:13:35.024470612Z 33 frames at 512x512 (Input sequence length: 9216) with 4 steps
+2026-03-06T15:13:35.705814673Z Generated new RoPE frequencies
+2026-03-06T15:15:19.997408133Z   0%|          | 0/4 [00:00<?, ?it/s]                                       0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [01:37<04:51, 97.27s/it] 50%|█████     | 2/4 [01:39<01:23, 41.53s/it] 75%|███████▌  | 3/4 [01:42<00:23, 23.67s/it]100%|██████████| 4/4 [01:44<00:00, 15.28s/it]100%|██████████| 4/4 [01:44<00:00, 26.16s/it]
+2026-03-06T15:15:19.997629445Z ---------- Sampling end ------------
+2026-03-06T15:15:21.221579397Z [Sampling] Max allocated memory: max_memory=20.256 GB
+2026-03-06T15:15:21.221634280Z [Sampling] Max reserved memory: max_reserved=20.719 GB
+2026-03-06T15:15:22.255758579Z WanVAE decoding frames:   0%|          | 0/8 [00:00<?, ?it/s]WanVAE decoding frames:  50%|█████     | 4/8 [00:00<00:00, 19.53it/s]WanVAE decoding frames:  75%|███████▌  | 6/8 [00:00<00:00, 10.63it/s]WanVAE decoding frames: 100%|██████████| 8/8 [00:00<00:00,  8.56it/s]WanVAE decoding frames: 100%|██████████| 8/8 [00:00<00:00,  9.72it/s]
+2026-03-06T15:15:23.136503758Z Prompt executed in 131.38 seconds
+2026-03-06T15:15:23.799390878Z handler.py          :100  2026-03-06 15:15:23,798 Getting history from: http://127.0.0.1:8188/history/e52da42c-3bc1-45e0-ab81-8d233ad79c91
+2026-03-06T15:15:24.287870539Z {"requestId": "8065e72b-8851-41c8-9551-2e378e31ec11-e1", "message": "Finished.", "level": "INFO"}
+2026-03-06T15:26:40.733377512Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2026-03-06T15:26:40.733462800Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2026-03-06T15:26:40.733468759Z {"requestId": "67fbad03-0054-4fc2-8c26-269fca66348f-e1", "message": "Started.", "level": "INFO"}
+2026-03-06T15:26:40.733657632Z handler.py          :202  2026-03-06 15:26:40,733 Received job input: {'cfg': 1, 'fps': 16, 'height': 512, 'image_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/f09d4b57-5cca-4ab9-b307-f12c630a10b8/animations/6196ce44-e75d-44cf-8991-e70e2f29908f/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T152639Z&X-Amz-Expires=604800&X-Amz-Signature=5ee41b65647248a08469f52bdf6a83460ba896fa3bf9b711511016399e330437&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'mode': 'animate', 'negative_prompt': '3D，写实，照片级真实感，照片，镜头移动，缩放，旋转，比例变化，背景变化，渐变，纹理，模糊，运动模糊，残影，拖尾，闪烁，抖动，扭曲，融化，缺少肢体，多余肢体，变形，畸形，解剖错误，水印，文字，签名', 'prompt': '2D精灵动画，像素风格角色，纯色#686868背景，逐帧匹配姿势序列，完全保持角色身份不变，相同的设计比例颜色和阴影，角色居中比例恒定，无镜头移动，无缝循环, A lone undead knight in tarnished dark iron armor, wielding a broadsword in the right hand', 'seed': 77960933, 'steps': 4, 'video_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standard-run_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T152639Z&X-Amz-Expires=604800&X-Amz-Signature=9509cf9d9cfd348efb36882b6767b6a15ba18b4c2418d5f1007b1c457a229246&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'width': 512}
+2026-03-06T15:26:40.734035007Z handler.py          :145  2026-03-06 15:26:40,733 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/f09d4b57-5cca-4ab9-b307-f12c630a10b8/animations/6196ce44-e75d-44cf-8991-e70e2f29908f/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T152639Z&X-Amz-Expires=604800&X-Amz-Signature=5ee41b65647248a08469f52bdf6a83460ba896fa3bf9b711511016399e330437&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-06T15:26:42.113997676Z handler.py          :166  2026-03-06 15:26:42,113 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/f09d4b57-5cca-4ab9-b307-f12c630a10b8/animations/6196ce44-e75d-44cf-8991-e70e2f29908f/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T152639Z&X-Amz-Expires=604800&X-Amz-Signature=5ee41b65647248a08469f52bdf6a83460ba896fa3bf9b711511016399e330437&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_ac28099b-30cb-4711-8716-a71eda2b9b08/input_image.jpg
+2026-03-06T15:26:42.114034481Z handler.py          :145  2026-03-06 15:26:42,113 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standard-run_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T152639Z&X-Amz-Expires=604800&X-Amz-Signature=9509cf9d9cfd348efb36882b6767b6a15ba18b4c2418d5f1007b1c457a229246&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-06T15:26:43.424934569Z handler.py          :166  2026-03-06 15:26:43,424 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standard-run_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260306%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260306T152639Z&X-Amz-Expires=604800&X-Amz-Signature=9509cf9d9cfd348efb36882b6767b6a15ba18b4c2418d5f1007b1c457a229246&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_ac28099b-30cb-4711-8716-a71eda2b9b08/input_video.mp4
+2026-03-06T15:26:43.425361088Z handler.py          :284  2026-03-06 15:26:43,425 Connecting to WebSocket: ws://127.0.0.1:8188/ws?clientId=d3ca40e8-ae7f-4449-951b-524a8dedbe09
+2026-03-06T15:26:43.425389501Z handler.py          :288  2026-03-06 15:26:43,425 Checking HTTP connection to: http://127.0.0.1:8188/
+2026-03-06T15:26:43.429218848Z handler.py          :296  2026-03-06 15:26:43,428 HTTP 연결 성공 (시도 1)
+2026-03-06T15:26:43.431101337Z handler.py          :311  2026-03-06 15:26:43,430 웹소켓 연결 성공 (시도 1)
+2026-03-06T15:26:43.431123701Z handler.py          :84   2026-03-06 15:26:43,430 Queueing prompt to: http://127.0.0.1:8188/prompt
+2026-03-06T15:26:43.432304280Z got prompt
+2026-03-06T15:26:55.449563557Z Loading T5 parameters:   0%|          | 0/242 [00:00<?, ?it/s]Loading T5 parameters:   0%|          | 1/242 [00:00<01:17,  3.11it/s]Loading T5 parameters:   7%|▋         | 18/242 [00:00<00:04, 53.36it/s]Loading T5 parameters:  14%|█▍        | 34/242 [00:00<00:02, 83.90it/s]Loading T5 parameters:  20%|██        | 49/242 [00:00<00:01, 101.12it/s]Loading T5 parameters:  28%|██▊       | 68/242 [00:00<00:01, 122.21it/s]Loading T5 parameters:  35%|███▍      | 84/242 [00:00<00:01, 131.05it/s]Loading T5 parameters:  41%|████      | 99/242 [00:00<00:01, 133.78it/s]Loading T5 parameters:  48%|████▊     | 116/242 [00:01<00:00, 143.96it/s]Loading T5 parameters:  55%|█████▍    | 132/242 [00:01<00:00, 142.30it/s]Loading T5 parameters:  61%|██████    | 148/242 [00:01<00:00, 143.37it/s]Loading T5 parameters:  67%|██████▋   | 163/242 [00:01<00:00, 141.73it/s]Loading T5 parameters:  74%|███████▎  | 178/242 [00:01<00:00, 142.66it/s]Loading T5 parameters:  80%|███████▉  | 193/242 [00:01<00:00, 144.14it/s]Loading T5 parameters:  86%|████████▌ | 208/242 [00:01<00:00, 145.63it/s]Loading T5 parameters:  92%|█████████▏| 223/242 [00:01<00:00, 135.03it/s]Loading T5 parameters:  98%|█████████▊| 237/242 [00:01<00:00, 134.11it/s]Loading T5 parameters: 100%|██████████| 242/242 [00:01<00:00, 121.55it/s]
+2026-03-06T15:26:56.145876356Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 813.82it/s]
+2026-03-06T15:26:56.169916020Z prompt token count: tensor([101], device='cuda:0')
+2026-03-06T15:26:56.197879872Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 918.95it/s]
+2026-03-06T15:26:56.223728124Z prompt token count: tensor([96], device='cuda:0')
+2026-03-06T15:27:00.086704056Z Detecting bboxes:   0%|          | 0/29 [00:00<?, ?it/s]Detecting bboxes:   3%|▎         | 1/29 [00:01<00:31,  1.12s/it]Detecting bboxes:  48%|████▊     | 14/29 [00:01<00:00, 15.44it/s]Detecting bboxes: 100%|██████████| 29/29 [00:01<00:00, 22.30it/s]
+2026-03-06T15:27:00.592032266Z Extracting keypoints:   0%|          | 0/29 [00:00<?, ?it/s]Extracting keypoints:  21%|██        | 6/29 [00:00<00:00, 58.25it/s]Extracting keypoints:  41%|████▏     | 12/29 [00:00<00:00, 58.61it/s]Extracting keypoints:  66%|██████▌   | 19/29 [00:00<00:00, 59.55it/s]Extracting keypoints:  90%|████████▉ | 26/29 [00:00<00:00, 60.24it/s]Extracting keypoints: 100%|██████████| 29/29 [00:00<00:00, 59.87it/s]
+2026-03-06T15:27:02.153654895Z Drawing pose images:   0%|          | 0/29 [00:00<?, ?it/s]Drawing pose images: 100%|██████████| 29/29 [00:00<00:00, 455.08it/s]
+2026-03-06T15:27:02.750536839Z Requested to load CLIPVisionModelProjection
+2026-03-06T15:27:02.773469274Z Model CLIPVisionModelProjection prepared for dynamic VRAM loading. 1205MB Staged. 0 patches attached.
+2026-03-06T15:27:02.867767630Z Clip embeds shape: torch.Size([1, 257, 1280]), dtype: torch.float32
+2026-03-06T15:27:02.867866789Z Combined clip embeds shape: torch.Size([1, 257, 1280])
+2026-03-06T15:27:03.662541832Z WanVAE encoding frames:   0%|          | 0/8 [00:00<?, ?it/s]WanVAE encoding frames:  50%|█████     | 4/8 [00:00<00:00, 36.62it/s]WanVAE encoding frames: 100%|██████████| 8/8 [00:00<00:00, 15.75it/s]WanVAE encoding frames: 100%|██████████| 8/8 [00:00<00:00, 17.20it/s]
+2026-03-06T15:27:04.470374938Z WanVAE encoding frames:   0%|          | 0/9 [00:00<?, ?it/s]WanVAE encoding frames:  44%|████▍     | 4/9 [00:00<00:00, 37.19it/s]WanVAE encoding frames:  89%|████████▉ | 8/9 [00:00<00:00, 15.74it/s]WanVAE encoding frames: 100%|██████████| 9/9 [00:00<00:00, 16.30it/s]
+2026-03-06T15:27:05.490506152Z Loading and assigning model weights to device...
+2026-03-06T15:27:07.524508642Z Loading transformer parameters to cuda:0:   0%|          | 0/1427 [00:00<?, ?it/s]Loading transformer parameters to cuda:0:   1%|          | 11/1427 [00:00<00:18, 75.33it/s]Loading transformer parameters to cuda:0:   4%|▍         | 54/1427 [00:00<00:05, 249.59it/s]Loading transformer parameters to cuda:0:  11%|█         | 152/1427 [00:00<00:02, 550.96it/s]Loading transformer parameters to cuda:0:  15%|█▌        | 215/1427 [00:00<00:02, 556.00it/s]Loading transformer parameters to cuda:0:  21%|██▏       | 304/1427 [00:00<00:01, 664.29it/s]Loading transformer parameters to cuda:0:  27%|██▋       | 381/1427 [00:00<00:01, 667.61it/s]Loading transformer parameters to cuda:0:  32%|███▏      | 456/1427 [00:00<00:01, 690.43it/s]Loading transformer parameters to cuda:0:  38%|███▊      | 549/1427 [00:00<00:01, 714.86it/s]Loading transformer parameters to cuda:0:  44%|████▎     | 622/1427 [00:01<00:01, 708.45it/s]Loading transformer parameters to cuda:0:  50%|█████     | 717/1427 [00:01<00:00, 718.75it/s]Loading transformer parameters to cuda:0:  55%|█████▌    | 790/1427 [00:01<00:00, 714.95it/s]Loading transformer parameters to cuda:0:  62%|██████▏   | 885/1427 [00:01<00:00, 720.93it/s]Loading transformer parameters to cuda:0:  67%|██████▋   | 958/1427 [00:01<00:00, 714.60it/s]Loading transformer parameters to cuda:0:  74%|███████▍  | 1053/1427 [00:01<00:00, 720.98it/s]Loading transformer parameters to cuda:0:  79%|███████▉  | 1126/1427 [00:01<00:00, 715.28it/s]Loading transformer parameters to cuda:0:  86%|████████▌ | 1221/1427 [00:01<00:00, 721.38it/s]Loading transformer parameters to cuda:0:  91%|█████████ | 1294/1427 [00:01<00:00, 715.33it/s]Loading transformer parameters to cuda:0: 100%|██████████| 1427/1427 [00:02<00:00, 701.81it/s]
+2026-03-06T15:27:07.529970875Z -------------------------
+2026-03-06T15:27:07.530020059Z Transformer weights loaded:
+2026-03-06T15:27:07.530101350Z Device: cuda:0   | Memory: 13,280,381.83 MB
+2026-03-06T15:27:07.530235491Z Using 406 LoRA weight patches for WanVideo model
+2026-03-06T15:27:08.043015645Z ------- Scheduler info -------
+2026-03-06T15:27:08.043410397Z Total timesteps: tensor([999, 964, 899, 749], device='cuda:0')
+2026-03-06T15:27:08.043704367Z Using timesteps: tensor([999, 964, 899, 749], device='cuda:0')
+2026-03-06T15:27:08.044105398Z Using sigmas: tensor([1.0000, 0.9643, 0.9000, 0.7500, 0.0000])
+2026-03-06T15:27:08.044189484Z ------------------------------
+2026-03-06T15:27:08.737408879Z Rope function: comfy
+2026-03-06T15:27:08.737807626Z ---------- Sampling start ----------
+2026-03-06T15:27:08.737822599Z 33 frames at 512x512 (Input sequence length: 9216) with 4 steps
+2026-03-06T15:27:19.082779802Z   0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:02<00:07,  2.44s/it] 50%|█████     | 2/4 [00:04<00:04,  2.42s/it] 75%|███████▌  | 3/4 [00:07<00:02,  2.42s/it]100%|██████████| 4/4 [00:09<00:00,  2.42s/it]100%|██████████| 4/4 [00:09<00:00,  2.42s/it]
+2026-03-06T15:27:19.083035686Z ---------- Sampling end ------------
+2026-03-06T15:27:20.211793170Z [Sampling] Max allocated memory: max_memory=20.256 GB
+2026-03-06T15:27:20.211843256Z [Sampling] Max reserved memory: max_reserved=20.812 GB
+2026-03-06T15:27:21.055948790Z WanVAE decoding frames:   0%|          | 0/8 [00:00<?, ?it/s]WanVAE decoding frames:  50%|█████     | 4/8 [00:00<00:00, 20.47it/s]WanVAE decoding frames:  88%|████████▊ | 7/8 [00:00<00:00,  9.67it/s]WanVAE decoding frames: 100%|██████████| 8/8 [00:00<00:00,  9.83it/s]
+2026-03-06T15:27:21.884062307Z Prompt executed in 38.45 seconds
+2026-03-06T15:27:22.587050957Z handler.py          :100  2026-03-06 15:27:22,586 Getting history from: http://127.0.0.1:8188/history/6d443fe2-7358-4b90-8ef4-05f20e00a2bb
+2026-03-06T15:27:23.053378331Z {"requestId": "67fbad03-0054-4fc2-8c26-269fca66348f-e1", "message": "Finished.", "level": "INFO"}
