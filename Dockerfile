@@ -2,7 +2,7 @@
 FROM wlsdml1114/multitalk-base:1.7 as runtime
 
 RUN pip install -U "huggingface_hub[hf_transfer]"
-RUN pip install runpod websocket-client
+RUN pip install runpod websocket-client boto3
 
 WORKDIR /
 

@@ -12,9 +12,39 @@ import binascii # Base64 에러 처리를 위해 import
 import subprocess
 import time
 
+import boto3
+from botocore.config import Config as BotoConfig
+
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+def _create_shared_boto_client():
+    """
+    Create a single boto3 S3 client reused for uploads.
+    Returns (client, bucket_name) or (None, None) if S3 is not configured.
+    """
+    endpoint_url = os.environ.get("BUCKET_ENDPOINT_URL")
+    access_key_id = os.environ.get("BUCKET_ACCESS_KEY_ID")
+    secret_access_key = os.environ.get("BUCKET_SECRET_ACCESS_KEY")
+
+    if not (endpoint_url and access_key_id and secret_access_key):
+        return None, None
+
+    session = boto3.session.Session()
+    client = session.client(
+        "s3",
+        endpoint_url=endpoint_url,
+        aws_access_key_id=access_key_id,
+        aws_secret_access_key=secret_access_key,
+        config=BotoConfig(
+            signature_version="s3v4",
+            retries={"max_attempts": 3, "mode": "standard"},
+        ),
+    )
+    bucket_name = os.environ.get("BUCKET_NAME", time.strftime("%m-%y"))
+    return client, bucket_name
 
 
 server_address = os.getenv('SERVER_ADDRESS', '127.0.0.1')
@@ -94,7 +124,7 @@ def get_videos(ws, prompt):
                 # fullpath를 이용하여 직접 파일을 읽고 base64로 인코딩
                 with open(video['fullpath'], 'rb') as f:
                     video_data = base64.b64encode(f.read()).decode('utf-8')
-                videos_output.append(video_data)
+                videos_output.append((video_data, video['fullpath']))
         output_videos[node_id] = videos_output
 
     return output_videos
@@ -288,11 +318,41 @@ def handler(job):
     videos = get_videos(ws, prompt)
     ws.close()
 
-    # 이미지가 없는 경우 처리
+    # Upload to S3 if configured, otherwise return base64
+    use_s3 = bool(os.environ.get("BUCKET_ENDPOINT_URL"))
     for node_id in videos:
         if videos[node_id]:
-            return {"video": videos[node_id][0]}
-    
+            video_base64, video_fullpath = videos[node_id][0]
+
+            if use_s3:
+                s3_client, s3_bucket = _create_shared_boto_client()
+                if s3_client:
+                    try:
+                        job_id = job.get("id", str(uuid.uuid4())[:8])
+                        s3_key = f"{job_id}/{uuid.uuid4()}.mp4"
+
+                        with open(video_fullpath, "rb") as f:
+                            s3_client.put_object(
+                                Bucket=s3_bucket,
+                                Key=s3_key,
+                                Body=f.read(),
+                                ContentType="video/mp4",
+                            )
+
+                        presigned_url = s3_client.generate_presigned_url(
+                            "get_object",
+                            Params={"Bucket": s3_bucket, "Key": s3_key},
+                            ExpiresIn=604800,
+                        )
+
+                        logger.info(f"Uploaded video to S3: {presigned_url}")
+                        return {"video": presigned_url, "type": "s3_url"}
+                    except Exception as e:
+                        logger.error(f"S3 upload failed, falling back to base64: {e}")
+
+            # Fallback to base64
+            return {"video": video_base64, "type": "base64"}
+
     return {"error": "비디오를를 찾을 수 없습니다."}
 
 runpod.serverless.start({"handler": handler})
