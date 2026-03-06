@@ -4,7 +4,7 @@
       "model": "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
       "base_precision": "fp16_fast",
       "quantization": "disabled",
-      "load_device": "offload_device",
+      "load_device": "main_device",
       "attention_mode": "sageattn",
       "rms_norm_function": "default",
       "compile_args": [
@@ -308,7 +308,7 @@
   },
   "196": {
     "inputs": {
-      "blocks_to_swap": 25,
+      "blocks_to_swap": 0,
       "enable_cuda_optimization": true,
       "enable_dram_optimization": true,
       "auto_hardware_tuning": false,
