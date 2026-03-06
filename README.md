@@ -238,7 +238,6 @@ The `input` object must contain the following fields. Images and videos can be i
 ```
 
 ### Output
-
 #### Success
 
 If the job is successful, it returns a JSON object with the generated video Base64 encoded.
