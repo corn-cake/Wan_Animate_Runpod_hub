@@ -250,6 +250,10 @@ def handler(job):
         prompt["27"]["inputs"]["steps"] = job_input.get("steps", 4)
         prompt["150"]["inputs"]["value"] = job_input["width"]
         prompt["151"]["inputs"]["value"] = job_input["height"]
+        if "clip_vision_ratio" in job_input:
+            prompt["70"]["inputs"]["ratio"] = job_input["clip_vision_ratio"]
+        if "inp_fusion_strength" in job_input:
+            prompt["197"]["inputs"]["strength_3"] = job_input["inp_fusion_strength"]
     else:
         if job_input.get("mode", "replace") == "animate":
             prompt = load_workflow('/newWanAnimate_point_animate_api.json')
@@ -268,6 +272,10 @@ def handler(job):
         prompt["27"]["inputs"]["steps"] = job_input.get("steps", 4)
         prompt["150"]["inputs"]["value"] = job_input["width"]
         prompt["151"]["inputs"]["value"] = job_input["height"]
+        if "clip_vision_ratio" in job_input:
+            prompt["70"]["inputs"]["ratio"] = job_input["clip_vision_ratio"]
+        if "inp_fusion_strength" in job_input:
+            prompt["197"]["inputs"]["strength_3"] = job_input["inp_fusion_strength"]
 
         prompt["107"]["inputs"]["points_store"] = job_input["points_store"]
         prompt["107"]["inputs"]["coordinates"] = job_input["coordinates"]
