@@ -1,0 +1,156 @@
+2026-03-07T01:01:08.009701375Z ==========
+2026-03-07T01:01:08.009711896Z == CUDA ==
+2026-03-07T01:01:08.009748808Z ==========
+2026-03-07T01:01:08.013637511Z CUDA Version 12.8.1
+2026-03-07T01:01:08.015771450Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2026-03-07T01:01:08.017686636Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2026-03-07T01:01:08.017692666Z By pulling and using the container, you accept the terms and conditions of this license:
+2026-03-07T01:01:08.017698553Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2026-03-07T01:01:08.017708513Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2026-03-07T01:01:08.033855899Z Starting ComfyUI in the background...
+2026-03-07T01:01:08.033861802Z Waiting for ComfyUI to be ready...
+2026-03-07T01:01:08.045484202Z Waiting for ComfyUI... (0/120)
+2026-03-07T01:01:09.913010024Z [START] Security scan
+2026-03-07T01:01:09.913047194Z [DONE] Security scan
+2026-03-07T01:01:09.913052914Z ## ComfyUI-Manager: installing dependencies done.
+2026-03-07T01:01:09.913058347Z ** ComfyUI startup time: 2026-03-07 01:01:09.912
+2026-03-07T01:01:09.913063652Z ** Platform: Linux
+2026-03-07T01:01:09.913086134Z ** Python version: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+2026-03-07T01:01:09.913180417Z ** Python executable: /usr/bin/python
+2026-03-07T01:01:09.913268717Z ** ComfyUI Path: /ComfyUI
+2026-03-07T01:01:09.913406967Z ** ComfyUI Base Folder Path: /ComfyUI
+2026-03-07T01:01:09.913490378Z ** User directory: /ComfyUI/user
+2026-03-07T01:01:09.913585254Z ** ComfyUI-Manager config path: /ComfyUI/user/__manager/config.ini
+2026-03-07T01:01:09.913702795Z ** Log path: /ComfyUI/user/comfyui.log
+2026-03-07T01:01:10.054592268Z Waiting for ComfyUI... (2/120)
+2026-03-07T01:01:10.661529754Z /usr/local/lib/python3.10/dist-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.5.0) or chardet (7.0.1)/charset_normalizer (3.4.4) doesn't match a supported version!
+2026-03-07T01:01:10.661566797Z   warnings.warn(
+2026-03-07T01:01:10.661579524Z Prestartup times for custom nodes:
+2026-03-07T01:01:10.661634441Z    2.0 seconds: /ComfyUI/custom_nodes/ComfyUI-Manager
+2026-03-07T01:01:12.064315245Z Waiting for ComfyUI... (4/120)
+2026-03-07T01:01:13.708013443Z WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
+2026-03-07T01:01:13.708053488Z Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+2026-03-07T01:01:13.708059628Z Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+2026-03-07T01:01:13.708064688Z Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8']}
+2026-03-07T01:01:13.717192202Z Checkpoint files will always be loaded safely.
+2026-03-07T01:01:13.898146061Z Total VRAM 45498 MB, total RAM 515599 MB
+2026-03-07T01:01:13.898181078Z pytorch version: 2.8.0+cu128
+2026-03-07T01:01:14.073795293Z Waiting for ComfyUI... (6/120)
+2026-03-07T01:01:14.525108072Z xformers version: 0.0.32.post2
+2026-03-07T01:01:14.525154074Z Set vram state to: NORMAL_VRAM
+2026-03-07T01:01:14.525180445Z Device: cuda:0 NVIDIA A40 : cudaMallocAsync
+2026-03-07T01:01:14.525199782Z Using async weight offloading with 2 streams
+2026-03-07T01:01:14.525372899Z Enabled pinned memory 489818.0
+2026-03-07T01:01:14.832650696Z Using sage attention
+2026-03-07T01:01:16.084967531Z Waiting for ComfyUI... (8/120)
+2026-03-07T01:01:16.548227064Z aimdo: src/control.c:65:INFO:comfy-aimdo inited for GPU: NVIDIA A40 (VRAM: 45498 MB)
+2026-03-07T01:01:16.548272886Z DynamicVRAM support detected and enabled
+2026-03-07T01:01:16.548278869Z Python version: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+2026-03-07T01:01:16.548284654Z ComfyUI version: 0.16.3
+2026-03-07T01:01:16.551348240Z Invalid version format in requirements.txt: 1.0
+2026-03-07T01:01:16.551441011Z ComfyUI frontend version: 1.39.19
+2026-03-07T01:01:16.552102680Z [Prompt Server] web root: /usr/local/lib/python3.10/dist-packages/comfyui_frontend_package/static
+2026-03-07T01:01:18.097669325Z Waiting for ComfyUI... (10/120)
+2026-03-07T01:01:18.208528443Z ----------------------------------------------------------------------
+2026-03-07T01:01:18.208535062Z [ComfyUI-Manager] NOTICE: Legacy config.ini detected
+2026-03-07T01:01:18.208540449Z   - Old: /ComfyUI/user/default/ComfyUI-Manager/config.ini
+2026-03-07T01:01:18.208545293Z   - New: /ComfyUI/user/__manager/config.ini
+2026-03-07T01:01:18.208550179Z   - Migrating config.ini only (other files are NOT migrated).
+2026-03-07T01:01:18.208554979Z   - Security level below 'normal' will be raised.
+2026-03-07T01:01:18.208559843Z ----------------------------------------------------------------------
+2026-03-07T01:01:18.208843564Z   - Security level: 'normal' (no change needed)
+2026-03-07T01:01:18.209472366Z ----------------------------------------------------------------------
+2026-03-07T01:01:18.209477539Z [ComfyUI-Manager] NOTICE: Legacy settings migrated
+2026-03-07T01:01:18.209528532Z   - Old location: /ComfyUI/user/default/ComfyUI-Manager
+2026-03-07T01:01:18.209551416Z   - Backed up to: /ComfyUI/user/__manager/.legacy-manager-backup
+2026-03-07T01:01:18.209556966Z   - Please verify and remove the backup when no longer needed.
+2026-03-07T01:01:18.209567126Z ----------------------------------------------------------------------
+2026-03-07T01:01:18.209869220Z ### Loading: ComfyUI-Manager (V3.39.2)
+2026-03-07T01:01:18.210196863Z [ComfyUI-Manager] network_mode: private
+2026-03-07T01:01:18.210311441Z [ComfyUI-Manager] ComfyUI per-queue preview override detected (PR #11261). Manager's preview method feature is disabled. Use ComfyUI's --preview-method CLI option or 'Settings > Execution > Live preview method'.
+2026-03-07T01:01:18.266902520Z ### ComfyUI Version: v0.16.3-2-g3b93d5d5 | Released on '2026-03-06'
+2026-03-07T01:01:18.286470949Z ⚠️  Enhanced face crop nodes not available: No module named '/ComfyUI/custom_nodes/ComfyUI-AdaptiveWindowSize.enhanced_face_crop'
+2026-03-07T01:01:18.286502106Z    Available nodes:
+2026-03-07T01:01:18.286509182Z    - Adaptive WanVideo Animate Embeds (AdaptiveWanVideoAnimateEmbeds)
+2026-03-07T01:01:18.502447507Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+2026-03-07T01:01:18.508714337Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+2026-03-07T01:01:18.621772936Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+2026-03-07T01:01:18.700912146Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+2026-03-07T01:01:18.731853685Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+2026-03-07T01:01:18.732040706Z [ComfyUI-Manager] The private comfyregistry is not yet supported in `network_mode=private`.
+2026-03-07T01:01:18.732111621Z [ComfyUI-Manager] All startup tasks have been completed.
+2026-03-07T01:01:18.955374984Z generated new fontManager
+2026-03-07T01:01:20.107678190Z Waiting for ComfyUI... (12/120)
+2026-03-07T01:01:20.282541644Z Import times for custom nodes:
+2026-03-07T01:01:20.282547769Z    0.0 seconds: /ComfyUI/custom_nodes/websocket_image_save.py
+2026-03-07T01:01:20.282569979Z    0.0 seconds: /ComfyUI/custom_nodes/auto_wan2.2animate_freamtowindow_server
+2026-03-07T01:01:20.282575299Z    0.0 seconds: /ComfyUI/custom_nodes/IntelligentVRAMNode
+2026-03-07T01:01:20.282618119Z    0.0 seconds: /ComfyUI/custom_nodes/ComfyUI-AdaptiveWindowSize
+2026-03-07T01:01:20.282670326Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-segment-anything-2
+2026-03-07T01:01:20.282686389Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-Manager
+2026-03-07T01:01:20.282727982Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+2026-03-07T01:01:20.282768332Z    0.1 seconds: /ComfyUI/custom_nodes/ComfyUI-KJNodes
+2026-03-07T01:01:20.282818295Z    0.7 seconds: /ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper
+2026-03-07T01:01:20.282848697Z    1.0 seconds: /ComfyUI/custom_nodes/ComfyUI-WanAnimatePreprocess
+2026-03-07T01:01:20.288018137Z Context impl SQLiteImpl.
+2026-03-07T01:01:20.288072384Z Will assume non-transactional DDL.
+2026-03-07T01:01:20.292877834Z Context impl SQLiteImpl.
+2026-03-07T01:01:20.292929811Z Will assume non-transactional DDL.
+2026-03-07T01:01:20.297561564Z Running upgrade  -> 0001_assets, Initial assets schema
+2026-03-07T01:01:20.297572139Z Revision ID: 0001_assets
+2026-03-07T01:01:20.297577327Z Revises: None
+2026-03-07T01:01:20.297582552Z Create Date: 2025-12-10 00:00:00
+2026-03-07T01:01:20.321370300Z Database upgraded from None to 0001_assets
+2026-03-07T01:01:20.376026884Z Assets scan(roots=['models']) completed in 0.055s (created=22, skipped_existing=0, orphans_pruned=0, total_seen=22)
+2026-03-07T01:01:20.437259582Z Starting server
+2026-03-07T01:01:20.437525898Z To see the GUI go to: http://0.0.0.0:8188
+2026-03-07T01:01:20.437675766Z To see the GUI go to: http://[::]:8188
+2026-03-07T01:01:22.121514975Z ComfyUI is ready!
+2026-03-07T01:01:22.121609314Z Starting the handler...
+2026-03-07T01:01:22.414902523Z /usr/local/lib/python3.10/dist-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.5.0) or chardet (7.0.1)/charset_normalizer (3.4.4) doesn't match a supported version!
+2026-03-07T01:01:22.414933561Z   warnings.warn(
+2026-03-07T01:01:24.115225351Z --- Starting Serverless Worker |  Version 1.7.13 ---
+2026-03-07T01:01:24.317897841Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2026-03-07T01:01:24.317947397Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2026-03-07T01:01:24.318061005Z {"requestId": "79dcf2bb-5b03-4d19-bfd9-2068b5b22bfd-e1", "message": "Started.", "level": "INFO"}
+2026-03-07T01:01:24.318277469Z handler.py          :202  2026-03-07 01:01:24,318 Received job input: {'cfg': 1, 'fps': 16, 'height': 512, 'image_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/323b72ce-ce7b-4612-9e08-410e08416b5c/animations/b34cb7a5-f7d1-4536-b0bc-feaf591313e7/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=326b8a24e75012e47466ae4cfa03af1a18841292d5e466321a7a7d7c0796174d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'mode': 'animate', 'negative_prompt': '3D，写实，照片级真实感，照片，镜头移动，缩放，旋转，比例变化，背景变化，渐变，纹理，模糊，运动模糊，残影，拖尾，闪烁，抖动，扭曲，融化，缺少肢体，多余肢体，变形，畸形，解剖错误，水印，文字，签名', 'prompt': '2D精灵动画，像素风格角色，纯色#686868背景，逐帧匹配姿势序列，完全保持角色身份不变，相同的设计比例颜色和阴影，角色居中比例恒定，无镜头移动，无缝循环, A pixel art style orc wielding a broadsword in the right hand', 'seed': 466738289, 'steps': 6, 'video_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/stable-sword-outward-slash_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=652aff152036547948f9dd5e114e5aa37814f6f75ca534da5f1e9326e73733ab&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'width': 512}
+2026-03-07T01:01:24.318367248Z handler.py          :145  2026-03-07 01:01:24,318 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/323b72ce-ce7b-4612-9e08-410e08416b5c/animations/b34cb7a5-f7d1-4536-b0bc-feaf591313e7/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=326b8a24e75012e47466ae4cfa03af1a18841292d5e466321a7a7d7c0796174d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-07T01:01:25.682755855Z handler.py          :166  2026-03-07 01:01:25,682 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/323b72ce-ce7b-4612-9e08-410e08416b5c/animations/b34cb7a5-f7d1-4536-b0bc-feaf591313e7/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=326b8a24e75012e47466ae4cfa03af1a18841292d5e466321a7a7d7c0796174d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_3d8e0388-889f-4bd8-9b23-054c121f8c56/input_image.jpg
+2026-03-07T01:01:25.682804689Z handler.py          :145  2026-03-07 01:01:25,682 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/stable-sword-outward-slash_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=652aff152036547948f9dd5e114e5aa37814f6f75ca534da5f1e9326e73733ab&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-07T01:01:26.905454538Z handler.py          :166  2026-03-07 01:01:26,905 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/stable-sword-outward-slash_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=652aff152036547948f9dd5e114e5aa37814f6f75ca534da5f1e9326e73733ab&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_3d8e0388-889f-4bd8-9b23-054c121f8c56/input_video.mp4
+2026-03-07T01:01:26.905762839Z handler.py          :284  2026-03-07 01:01:26,905 Connecting to WebSocket: ws://127.0.0.1:8188/ws?clientId=3d456f79-2019-444d-9d8c-db9ecb034fa1
+2026-03-07T01:01:26.905786584Z handler.py          :288  2026-03-07 01:01:26,905 Checking HTTP connection to: http://127.0.0.1:8188/
+2026-03-07T01:01:26.909986184Z handler.py          :296  2026-03-07 01:01:26,909 HTTP 연결 성공 (시도 1)
+2026-03-07T01:01:26.912200252Z handler.py          :311  2026-03-07 01:01:26,912 웹소켓 연결 성공 (시도 1)
+2026-03-07T01:01:26.912241972Z handler.py          :84   2026-03-07 01:01:26,912 Queueing prompt to: http://127.0.0.1:8188/prompt
+2026-03-07T01:01:26.913590284Z got prompt
+2026-03-07T01:01:26.918491010Z Failed to validate prompt for output 30:
+2026-03-07T01:01:26.918530316Z * ImageResizeKJv2 64:
+2026-03-07T01:01:26.918605459Z   - Value not in list: device: 'cuda' not in ['cpu', 'gpu']
+2026-03-07T01:01:26.918614006Z Output will be ignored
+2026-03-07T01:01:26.918680229Z invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+2026-03-07T01:01:26.921245826Z {"requestId": "79dcf2bb-5b03-4d19-bfd9-2068b5b22bfd-e1", "message": "Captured Handler Exception", "level": "ERROR"}
+2026-03-07T01:01:26.921354484Z {"requestId": null, "message": "{\n    \"error_type\": \"<class 'urllib.error.HTTPError'>\",\n    \"error_message\": \"HTTP Error 400: Bad Request\",\n    \"error_traceback\": \"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.10/dist-packages/runpod/serverless/modules/rp_job.py\\\", line 182, in run_job\\n    handler_return = handler(job)\\n  File \\\"//handler.py\\\", line 318, in handler\\n    videos = get_videos(ws, prompt)\\n  File \\\"//handler.py\\\", line 105, in get_videos\\n    prompt_id = queue_prompt(prompt)['prompt_id']\\n  File \\\"//handler.py\\\", line 88, in queue_prompt\\n    return json.loads(urllib.request.urlopen(req).read())\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 216, in urlopen\\n    return opener.open(url, data, timeout)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 525, in open\\n    response = meth(req, response)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 634, in http_response\\n    response = self.parent.error(\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 563, in error\\n    return self._call_chain(*args)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 496, in _call_chain\\n    result = func(*args)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 643, in http_error_default\\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\\nurllib.error.HTTPError: HTTP Error 400: Bad Request\\n\",\n    \"hostname\": \"06oqbn2hgn4oro-64411393\",\n    \"worker_id\": \"06oqbn2hgn4oro\",\n    \"runpod_version\": \"1.7.13\"\n}", "level": "ERROR"}
+2026-03-07T01:01:27.122643073Z {"requestId": "79dcf2bb-5b03-4d19-bfd9-2068b5b22bfd-e1", "message": "Finished.", "level": "INFO"}
+2026-03-07T01:01:28.087168009Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2026-03-07T01:01:28.087213112Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2026-03-07T01:01:28.087219065Z {"requestId": "24aa8400-d06e-4e95-949f-d77f60e7ed7b-e1", "message": "Started.", "level": "INFO"}
+2026-03-07T01:01:28.087357232Z handler.py          :202  2026-03-07 01:01:28,087 Received job input: {'cfg': 1, 'fps': 16, 'height': 512, 'image_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/323b72ce-ce7b-4612-9e08-410e08416b5c/animations/349af848-17a7-4b61-b83f-6534269b2c9a/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=84ccccae0b1e98a168fd8f4adbcde4d8313f2b02ffde809088ea917864707d63&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'mode': 'animate', 'negative_prompt': '3D，写实，照片级真实感，照片，镜头移动，缩放，旋转，比例变化，背景变化，渐变，纹理，模糊，运动模糊，残影，拖尾，闪烁，抖动，扭曲，融化，缺少肢体，多余肢体，变形，畸形，解剖错误，水印，文字，签名', 'prompt': '2D精灵动画，像素风格角色，纯色#686868背景，逐帧匹配姿势序列，完全保持角色身份不变，相同的设计比例颜色和阴影，角色居中比例恒定，无镜头移动，无缝循环, A pixel art style orc wielding a broadsword in the right hand', 'seed': 466738289, 'steps': 6, 'video_url': 'https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standing-death-forward-02_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=18fc7ab7b514e9de89903c58906c2a1ccd15bd3269e3b5c7ee42bdf16cabc274&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject', 'width': 512}
+2026-03-07T01:01:28.087444785Z handler.py          :145  2026-03-07 01:01:28,087 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/323b72ce-ce7b-4612-9e08-410e08416b5c/animations/349af848-17a7-4b61-b83f-6534269b2c9a/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=84ccccae0b1e98a168fd8f4adbcde4d8313f2b02ffde809088ea917864707d63&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-07T01:01:29.508889425Z handler.py          :166  2026-03-07 01:01:29,508 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/projects/user_394mTGpjWTTpHFvvJID5UbcWjQc/323b72ce-ce7b-4612-9e08-410e08416b5c/animations/349af848-17a7-4b61-b83f-6534269b2c9a/repositioned.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=84ccccae0b1e98a168fd8f4adbcde4d8313f2b02ffde809088ea917864707d63&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_ccc2537d-b5fb-4936-9286-412c5781ea57/input_image.jpg
+2026-03-07T01:01:29.508935275Z handler.py          :145  2026-03-07 01:01:29,508 🌐 URL 입력 처리: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standing-death-forward-02_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=18fc7ab7b514e9de89903c58906c2a1ccd15bd3269e3b5c7ee42bdf16cabc274&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+2026-03-07T01:01:30.525210463Z handler.py          :166  2026-03-07 01:01:30,524 ✅ URL에서 파일을 성공적으로 다운로드했습니다: https://contained-vault-3tcqsdtbc.t3.storageapi.dev/animation-references/platformer/standing-death-forward-02_platformer_right.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=tid_cZeelwqPkzHJqMVUQvCbQABAAsIQsGjnhDxbEDNBtNvoqOXaux%2F20260307%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260307T010102Z&X-Amz-Expires=604800&X-Amz-Signature=18fc7ab7b514e9de89903c58906c2a1ccd15bd3269e3b5c7ee42bdf16cabc274&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject -> /task_ccc2537d-b5fb-4936-9286-412c5781ea57/input_video.mp4
+2026-03-07T01:01:30.525524931Z handler.py          :284  2026-03-07 01:01:30,525 Connecting to WebSocket: ws://127.0.0.1:8188/ws?clientId=3d456f79-2019-444d-9d8c-db9ecb034fa1
+2026-03-07T01:01:30.525593306Z handler.py          :288  2026-03-07 01:01:30,525 Checking HTTP connection to: http://127.0.0.1:8188/
+2026-03-07T01:01:30.528550453Z handler.py          :296  2026-03-07 01:01:30,528 HTTP 연결 성공 (시도 1)
+2026-03-07T01:01:30.530968824Z handler.py          :311  2026-03-07 01:01:30,530 웹소켓 연결 성공 (시도 1)
+2026-03-07T01:01:30.531015911Z handler.py          :84   2026-03-07 01:01:30,530 Queueing prompt to: http://127.0.0.1:8188/prompt
+2026-03-07T01:01:30.532375398Z got prompt
+2026-03-07T01:01:30.536598020Z Failed to validate prompt for output 30:
+2026-03-07T01:01:30.536818258Z * ImageResizeKJv2 64:
+2026-03-07T01:01:30.536945348Z   - Value not in list: device: 'cuda' not in ['cpu', 'gpu']
+2026-03-07T01:01:30.537096537Z Output will be ignored
+2026-03-07T01:01:30.537277735Z invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+2026-03-07T01:01:30.538148051Z {"requestId": "24aa8400-d06e-4e95-949f-d77f60e7ed7b-e1", "message": "Captured Handler Exception", "level": "ERROR"}
+2026-03-07T01:01:30.538198747Z {"requestId": null, "message": "{\n    \"error_type\": \"<class 'urllib.error.HTTPError'>\",\n    \"error_message\": \"HTTP Error 400: Bad Request\",\n    \"error_traceback\": \"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.10/dist-packages/runpod/serverless/modules/rp_job.py\\\", line 182, in run_job\\n    handler_return = handler(job)\\n  File \\\"//handler.py\\\", line 318, in handler\\n    videos = get_videos(ws, prompt)\\n  File \\\"//handler.py\\\", line 105, in get_videos\\n    prompt_id = queue_prompt(prompt)['prompt_id']\\n  File \\\"//handler.py\\\", line 88, in queue_prompt\\n    return json.loads(urllib.request.urlopen(req).read())\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 216, in urlopen\\n    return opener.open(url, data, timeout)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 525, in open\\n    response = meth(req, response)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 634, in http_response\\n    response = self.parent.error(\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 563, in error\\n    return self._call_chain(*args)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 496, in _call_chain\\n    result = func(*args)\\n  File \\\"/usr/lib/python3.10/urllib/request.py\\\", line 643, in http_error_default\\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\\nurllib.error.HTTPError: HTTP Error 400: Bad Request\\n\",\n    \"hostname\": \"06oqbn2hgn4oro-64411393\",\n    \"worker_id\": \"06oqbn2hgn4oro\",\n    \"runpod_version\": \"1.7.13\"\n}", "level": "ERROR"}
+2026-03-07T01:01:30.736501973Z {"requestId": "24aa8400-d06e-4e95-949f-d77f60e7ed7b-e1", "message": "Finished.", "level": "INFO"}

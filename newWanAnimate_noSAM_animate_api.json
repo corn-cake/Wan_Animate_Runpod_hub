@@ -214,7 +214,7 @@
       "pad_color": "0, 0, 0",
       "crop_position": "top",
       "divisible_by": 15,
-      "device": "cuda",
+      "device": "cpu",
       "image": [
         "57",
         0
